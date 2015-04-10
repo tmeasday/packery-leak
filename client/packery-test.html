@@ -1,0 +1,20 @@
+<head>
+  <title>packery-test</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button class="js-toggle">toggle</button>
+  {{#if show}}
+    {{> packed}}
+  {{/if}}
+</template>
+
+<template name="packed">
+  <div>Packery guy!</div>
+</template>
